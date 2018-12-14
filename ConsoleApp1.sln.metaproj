@@ -29,15 +29,15 @@
     <Configuration>Debug</Configuration>
     <Platform>Any CPU</Platform>
     <AspNetConfiguration>Debug</AspNetConfiguration>
-    <SolutionDir>C:\Users\Administrator\Documents\GitHub\ConsoleApp1\TEst-build\</SolutionDir>
+    <SolutionDir>C:\Users\Administrator\Documents\GitHub\ConsoleApp1\testVS\</SolutionDir>
     <SolutionExt>.sln</SolutionExt>
     <SolutionFileName>ConsoleApp1.sln</SolutionFileName>
     <SolutionName>ConsoleApp1</SolutionName>
-    <SolutionPath>C:\Users\Administrator\Documents\GitHub\ConsoleApp1\TEst-build\ConsoleApp1.sln</SolutionPath>
+    <SolutionPath>C:\Users\Administrator\Documents\GitHub\ConsoleApp1\testVS\ConsoleApp1.sln</SolutionPath>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <CurrentSolutionConfigurationContents>
       <SolutionConfiguration xmlns="">
-  <ProjectConfiguration Project="{D94ED221-EF48-4974-BD46-30F0EC81B3AC}" AbsolutePath="C:\Users\Administrator\Documents\GitHub\ConsoleApp1\TEst-build\ConsoleApp1\ConsoleApp1.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D94ED221-EF48-4974-BD46-30F0EC81B3AC}" AbsolutePath="C:\Users\Administrator\Documents\GitHub\ConsoleApp1\testVS\ConsoleApp1\ConsoleApp1.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
 </SolutionConfiguration>
     </CurrentSolutionConfigurationContents>
     <NuGetRestoreTargets>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\..\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets</NuGetRestoreTargets>
@@ -54,7 +54,7 @@
     <_GenerateRestoreGraphProjectEntryInputProperties>
       ExcludeRestorePackageImports=true;
       _RestoreSolutionFileUsed=true;
-      SolutionDir=C:\Users\Administrator\Documents\GitHub\ConsoleApp1\TEst-build\;
+      SolutionDir=C:\Users\Administrator\Documents\GitHub\ConsoleApp1\testVS\;
       SolutionName=ConsoleApp1;
     </_GenerateRestoreGraphProjectEntryInputProperties>
   </PropertyGroup>
@@ -65,7 +65,7 @@
       <Platform>Any CPU</Platform>
       <Content>
         <SolutionConfiguration xmlns="">
-  <ProjectConfiguration Project="{D94ED221-EF48-4974-BD46-30F0EC81B3AC}" AbsolutePath="C:\Users\Administrator\Documents\GitHub\ConsoleApp1\TEst-build\ConsoleApp1\ConsoleApp1.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D94ED221-EF48-4974-BD46-30F0EC81B3AC}" AbsolutePath="C:\Users\Administrator\Documents\GitHub\ConsoleApp1\testVS\ConsoleApp1\ConsoleApp1.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
 </SolutionConfiguration>
       </Content>
     </SolutionConfiguration>
@@ -74,13 +74,13 @@
       <Platform>Any CPU</Platform>
       <Content>
         <SolutionConfiguration xmlns="">
-  <ProjectConfiguration Project="{D94ED221-EF48-4974-BD46-30F0EC81B3AC}" AbsolutePath="C:\Users\Administrator\Documents\GitHub\ConsoleApp1\TEst-build\ConsoleApp1\ConsoleApp1.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D94ED221-EF48-4974-BD46-30F0EC81B3AC}" AbsolutePath="C:\Users\Administrator\Documents\GitHub\ConsoleApp1\testVS\ConsoleApp1\ConsoleApp1.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
 </SolutionConfiguration>
       </Content>
     </SolutionConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Administrator\Documents\GitHub\ConsoleApp1\TEst-build\ConsoleApp1\ConsoleApp1.csproj">
+    <ProjectReference Include="C:\Users\Administrator\Documents\GitHub\ConsoleApp1\testVS\ConsoleApp1\ConsoleApp1.csproj">
       <ToolsVersion>
       </ToolsVersion>
       <SkipNonexistentProjects>False</SkipNonexistentProjects>
@@ -277,19 +277,19 @@
     <MSBuild Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
   </Target>
   <Target Name="ConsoleApp1" Outputs="@(ConsoleApp1BuildOutput)">
-    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Administrator\Documents\GitHub\ConsoleApp1\TEst-build\ConsoleApp1\ConsoleApp1.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Administrator\Documents\GitHub\ConsoleApp1\testVS\ConsoleApp1\ConsoleApp1.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
       <Output TaskParameter="TargetOutputs" ItemName="ConsoleApp1BuildOutput" />
     </MSBuild>
   </Target>
   <Target Name="ConsoleApp1:Clean">
-    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Administrator\Documents\GitHub\ConsoleApp1\TEst-build\ConsoleApp1\ConsoleApp1.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Administrator\Documents\GitHub\ConsoleApp1\testVS\ConsoleApp1\ConsoleApp1.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
   </Target>
   <Target Name="ConsoleApp1:Rebuild" Outputs="@(ConsoleApp1BuildOutput)">
-    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Administrator\Documents\GitHub\ConsoleApp1\TEst-build\ConsoleApp1\ConsoleApp1.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Administrator\Documents\GitHub\ConsoleApp1\testVS\ConsoleApp1\ConsoleApp1.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
       <Output TaskParameter="TargetOutputs" ItemName="ConsoleApp1BuildOutput" />
     </MSBuild>
   </Target>
   <Target Name="ConsoleApp1:Publish">
-    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Administrator\Documents\GitHub\ConsoleApp1\TEst-build\ConsoleApp1\ConsoleApp1.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Administrator\Documents\GitHub\ConsoleApp1\testVS\ConsoleApp1\ConsoleApp1.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
   </Target>
 </Project>
