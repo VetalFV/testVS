@@ -12,13 +12,7 @@ namespace ConsoleApp1
             Console.ReadKey(true);
         }
 
- static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-            Console.Write("Press any key to continue...");
 
-            Console.ReadKey(true);
-        }
     }
 
 
